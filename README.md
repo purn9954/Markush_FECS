@@ -336,7 +336,7 @@ Get-FileHash .\Markush_FECS.exe -Algorithm SHA256
 
 ---
 
-## 13. Limitations & Security Boundaries
+## 13. Security Boundaries
 
 - **User-Space Offline Enforcement Limits:** The offline licensing system enforces evaluation limits via asymmetric signatures and HMAC-SHA256 ledgers. On user-controlled hardware, an administrative user with dynamic debuggers (GDB/x64dbg) or reverse engineering tools can inspect process memory or modify binary instructions. This mechanism provides evaluation accounting and tamper detection against casual modification—it is **not** an unbreakable hardware-enforced DRM.
 - **Passphrase Non-Recoverability:** The cryptographic design contains no backdoors, escrow keys, or master recovery bypasses. If a passphrase is lost, data recovery is mathematically impossible. Always test recovery and maintain independent backups of critical data.
